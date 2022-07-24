@@ -113,7 +113,13 @@ def upload_file():
 
 
 
+@app.route('/about', methods=['GET'])
+def about_page():
+    return render_template("about.html")
 
+@app.route('/gallery', methods=['GET'])
+def about_page():
+    return render_template("about.html")
 
 
 
