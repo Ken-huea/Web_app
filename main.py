@@ -123,9 +123,7 @@ def upload_file():
 #     return render_template("gallery.html")
 
 
-# if __name__ == "__main__":
-#     app.run("0.0.0.0", debug=True)
-    
+
     
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 8080))
