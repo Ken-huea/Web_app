@@ -109,7 +109,7 @@ def upload_file():
             return redirect(url_for('download_api'))
         
         
-    return render_template("gallery.html",answer="")
+    return render_template("index.html",answer="")
 
 
 
@@ -124,7 +124,7 @@ def upload_file():
 
 
 
-#これが正規。    
+# # これが正規。    
 # if __name__ == "__main__":
 #     port = int(os.environ.get('PORT', 8080))
 #     app.run(host ="0.0.0.0",port = port)
