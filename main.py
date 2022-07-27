@@ -109,7 +109,7 @@ def upload_file():
             return redirect(url_for('download_api'))
         
         
-    return render_template("gllery.html",answer="")
+    return render_template("gallery.html",answer="")
 
 
 
