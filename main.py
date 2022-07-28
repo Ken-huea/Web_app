@@ -122,6 +122,11 @@ def upload_file():
 
 
 
+# @app.route('/about')
+# def index_page():
+#     return render_template("about.html")
+
+
 @app.route('/about')
 def about_page():
     return render_template("about.html")
