@@ -127,7 +127,7 @@ def about_page():
     return render_template("about.html")
 
 @app.route('/gallery')
-def about_page():
+def gallery_page():
     return render_template("gallery.html")
 
 
