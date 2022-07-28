@@ -99,14 +99,22 @@ def upload_file():
                 cv2.imwrite("./warehouse/" + str(num) + ".jpg" ,im) 
 
             
-            
-            
-
             path = glob.glob("./warehouse/*.jpg")#ifの中。
             with zipfile.ZipFile('./warehouse/test.zip','w') as myzip:
                 for image_file in path:
                     myzip.write(image_file)
             return redirect(url_for('download_api'))
+        
+        # if request.form['send'] == 'aaa':
+        #     return render_template('index.html')
+        
+        # if request.form['send'] == 'bbb':
+        #     return render_template('bout.html')
+        
+        # if request.form['send'] == 'ccc':
+        #     return render_template('garelly.html')
+        
+        
         
         
     return render_template("index.html",answer="")
@@ -114,13 +122,13 @@ def upload_file():
 
 
 
-# @app.route('/about', methods=['GET'])
-# def about_page():
-#     return render_template("about.html")
+@app.route('/about')
+def about_page():
+    return render_template("about.html")
 
-# @app.route('/gallery', methods=['GET'])
-# def about_page():
-#     return render_template("gallery.html")
+@app.route('/gallery')
+def about_page():
+    return render_template("gallery.html")
 
 
 
