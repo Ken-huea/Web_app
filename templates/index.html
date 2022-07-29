@@ -23,9 +23,9 @@
                 <!--PC用（801px以上端末）メニュー-->
                 <nav id="menubar">
                     <ul>
-                        <li class="current"><a href="{{url_for('upload_file')}}">About</a></li>
+                        <li class="current"><a href="{{url_for('upload_file')}}">Home</a></li>
                         <li><a href="{{url_for('about_page')}}">自己紹介</a></li>
-                        <li><a href="gallery.html">学習内容</a></li>
+                        <li><a href="{{url_for('gallery_page')}}">学習内容</a></li>
                         <li><a href="https://qiita.com/">ご連絡</a></li>
                     </ul>
                 </nav>
@@ -35,11 +35,10 @@
         <!--小さな端末用（800px以下端末）メニュー-->
         <nav id="menubar-s">
             <ul>
-                <li class="current"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+                <li class="current"><a href="{{url_for('upload_file')}}">Home</a></li>
+                <li><a href="{{url_for('about_page')}}">自己紹介</a></li>
+                <li><a href="{{url_for('gallery_page')}}">学習内容</a></li>
+                <li><a href="https://qiita.com/">ご連絡</a></li>
         </nav>
         <div class="inner">
             <div id="contents">
