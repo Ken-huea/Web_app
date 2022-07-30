@@ -184,7 +184,7 @@ header #logo {
 #main .list figure img {
 	width: 25%;			/*写真の幅*/
 	float: left;		/*左に回り込み*/
-	border-radius: 50%;	/*円形にくり抜く指定。通常通りに表示させたいならこの１行削除。*/
+	/* border-radius: 50%;	円形にくり抜く指定。通常通りに表示させたいならこの１行削除。 */
 }
 /*h4タグ*/
 #main .list h4 {
