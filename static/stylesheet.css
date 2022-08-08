@@ -803,9 +803,13 @@ img.fr {
     margin: 0;
     width: 100%;
   }
+
+  /* メニュー欄の表示をデフォルトで消します。 */
   /* #menubar-s {
-    display: none; */
-  /* } */
+    display: none;
+  } 
+ */
+
 }
 
 /*画面幅400px以下の設定
@@ -821,4 +825,11 @@ img.fr {
   header #logo {
     width: 200px; /*画像の幅*/
   }
+
+  /* メニュー欄の表示をデフォルトで消します。 */
+  /* #menubar-s {
+    display: none;
+  }  */
+
+
 }
