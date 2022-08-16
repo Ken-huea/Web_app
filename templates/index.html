@@ -21,8 +21,11 @@
 <i class="fa-regular fa-flower-daffodil"></i><!--アイコン設定-->
     <div id="container">
         <header>
+
             <div class="inner">
-                <h1 id="logo"><a href="index.html"><img src="../static/images/picwish.png" alt="SAMPLE Mizumashi SITE"></a></h1>
+                <!-- <h1 id="logo"><a href="index.html"><img src="../static/images/picwish.png" alt="SAMPLE Mizumashi SITE"></a></h1> -->
+                <!-- <h1 id="logo"><a href="./"><img src="{{url_for('upload_file')}}" alt="SAMPLE Mizumashi SITE"></a></h1>  -->
+                <h1 id="logo"><a href="{{url_for('upload_file')}}"><img src="../static/images/logo2.png" alt="SAMPLE Mizumashi SITE"></a></h1>
                 <!--PC用（801px以上端末）メニュー-->
                 <nav id="menubar">
                     <ul>
@@ -132,6 +135,16 @@
                             <li><a href="#chapter2">きっかけ</a></li>
                             <li><a href="#chapter3">見どころ</a></li>
                             <li><a href="#chapter4">参照</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav>
+                        <h2>Qiitaのページ</h2>
+                        <ul class="submenu">
+                            <li><img src="../static/images/qr_my_qiita.png" alt="タイトル"></li>
+                            <li><a href="https://qiita.com/" target="_blank">urlからはこちらをクリック</a></li>
+                            <li><a href="https://qiita.com/The_Boys/items/40233521bf8d7fe82093" target="_blank">シリーズ時系列解析</a></li>
+                            <li><a href="https://qiita.com/The_Boys/items/51983eec36e2ebe440cc" target="_blank">シリーズfeaturetools TPOT</a></li>
                         </ul>
                     </nav>
                     <!-- <section class="box">

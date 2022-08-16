@@ -23,14 +23,15 @@
 
 <header>
 <div class="inner">
+	<h1 id="logo"><a href="{{url_for('upload_file')}}"><img src="../static/images/logo2.png" alt="SAMPLE Mizumashi SITE"></a></h1>
 
 <!-- <h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE HOBBY SITE"></a></h1> -->
 <!--PC用（801px以上端末）メニュー-->
 <nav id="menubar">
 <ul>
-	<li class="current"><a href="{{url_for('upload_file')}}">Home</a></li>
+	<li><a href="{{url_for('upload_file')}}">Home</a></li>
 	<li><a href="{{url_for('about_page')}}">自己紹介</a></li>
-	<li><a href="{{url_for('gallery_page')}}">学習内容</a></li>
+	<li class="current"><a href="{{url_for('gallery_page')}}">学習内容</a></li>
 	<li><a href="https://qiita.com/">ご連絡</a></li>
 </ul>
 </nav>
@@ -124,6 +125,20 @@
 <li><a href="#chapter4">内容の復習</a></li>
 <li><a href="#chapter5">興味ある事の深堀</a></li>
 </ul>
+</nav>
+
+<nav>
+	<h2>Qiitaのページ</h2>
+	<ul class="submenu">
+		<li><img src="../static/images/qr_my_qiita.png" alt="タイトル"></li>
+		<li><a href="https://qiita.com/" target="_blank">urlからはこちらをクリック</a></li>
+		<li><a href="https://qiita.com/The_Boys/items/40233521bf8d7fe82093" target="_blank">シリーズ時系列解析</a></li>
+		<li><a href="https://qiita.com/The_Boys/items/51983eec36e2ebe440cc" target="_blank">シリーズfeaturetools TPOT</a></li>
+		<li><a href="https://qiita.com/The_Boys/items/770af0ed1696b83273f6" target="_blank">シリーズGit hub</a></li>
+		<li><a href="https://qiita.com/The_Boys/items/da2eb6895ca400730fb1" target="_blank">シリーズスクレイピング</a></li>
+
+
+	</ul>
 </nav>
 
 
