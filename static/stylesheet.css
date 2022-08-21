@@ -107,18 +107,25 @@ header .inner {
 header #logo {
   position: absolute;
   left: 3%; /*ヘッダーブロックに対して左から3%の位置に配置*/
-  top: 40px; /*ヘッダーブロックに対して上から40pxの位置に配置*/
+  /* 以下のtopの位置を変更 */
+  top: 0px; /*ヘッダーブロックに対して上から40pxの位置に配置*/
+  /* ここまで */
   width: 400px; /*画像の幅*/
-  margin-bottom: 30px;
+
+  
 
 }
+
 
 /*上部のメインメニュー
 ---------------------------------------------------------------------------*/
 /*メニューブロック全体の設定*/
 #menubar {
   position: absolute;
-  bottom: 0px; /*headerブロックの下から0pxの場所に配置。*/
+  /* 以下のbottomの位置を変更 */
+  /* -を大きくすればするほど広がる */
+  bottom: -10px; /*headerブロックの下から0pxの場所に配置。*/
+  /* ここまで */
   left: 3%; /*headerブロックの左から3%の場所に配置。*/
   width: 94%; /*幅。上で3%使っているので、右にも同じ3%を残すとすると、残りが94%。*/
 }
@@ -126,6 +133,7 @@ header #logo {
 #menubar li {
   float: left;
   width: 25%; /*メニューの幅。５個にしたいなら、20%にすればOK。*/
+  
 }
 #menubar li a {
   text-decoration: none;
@@ -849,4 +857,9 @@ img.fr {
   }  */
 
 
+}
+
+.logoimg{
+  margin-bottom: 30vh;
+  width: 200%;
 }
